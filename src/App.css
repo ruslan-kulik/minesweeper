@@ -1,0 +1,350 @@
+:root {
+    --mine1: url(./images/mine1.png);
+    --mine2: url(./images/mine2.png);
+    --mine3: url(./images/mine3.png);
+    --mine4: url(./images/mine4.png);
+    --mine5: url(./images/mine5.png);
+    --mine6: url(./images/mine6.png);
+    --mine7: url(./images/mine7.png);
+    --mine8: url(./images/mine8.png);
+    --mine9: url(./images/mine9.png);
+    --mine10: url(./images/mine10.png);
+    --mine11: url(./images/mine11.png);
+    --mine12: url(./images/mine12.png);
+    --mine13: url(./images/mine13.png);
+
+    --flag1: url(./images/flag1.png);
+    --flag2: url(./images/flag2.png);
+    --flag3: url(./images/flag3.png);
+    --flag4: url(./images/flag4.png);
+    --flag5: url(./images/flag5.png);
+    --flag6: url(./images/flag6.png);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+[theme-type='gray'] {
+    background-color: gray;
+}
+
+[theme-type='bg1'] {
+    background-image: url(./images/bg1.png);
+    background-size: 20vw;
+}
+
+[theme-type='bg2'] {
+    background-image: url(./images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[theme-type='bg3'] {
+    background-image: url(./images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[theme-type='bg4'] {
+    background-image: url(./images/bg4.png);
+    background-size: 10vw;
+}
+
+[theme-type='bg5'] {
+    background-image: url(./images/bg5.png);
+    background-size: 10vw;
+}
+
+[theme-type='bg6'] {
+    background-image: url(./images/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[theme-type='bg7'] {
+    background-image: url(./images/bg7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[theme-type='bg8'] {
+    background-image: url(./images/bg8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+[theme-type='bg9'] {
+    background-image: url(./images/bg9.png);
+    background-size: 10vw;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gamefield {
+    font-family: FieldFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background: rgb(160, 160, 160);
+    border: 4px outset rgb(210, 210, 210);
+}
+
+.btnSettings {
+    background-image: url(./images/settings.png);
+    background-size: 80% 80%;
+}
+
+.btnStyles {
+    background-image: url(./images/style.png);
+    background-size: 112% 112%;
+}
+
+.btnRules {
+    background-image: url(./images/rules.png);
+    background-size: 85% 85%;
+}
+
+.btnCopyright {
+    background-image: url(./images/authors.png);
+    background-size: 85% 85%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background: rgb(160, 160, 160);
+    outline: 4px inset rgb(210, 210, 210);
+    margin-bottom: 24px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.restart {
+    margin: 0 10px 0 10px;
+}
+
+.buttons>a {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    border: 6px outset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+}
+
+.restart {
+    background-position: center;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    border: 6px outset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+}
+
+.buttons>a:active:not(.nonClick) {
+    border: 6px inset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+}
+
+.restart:active {
+    background-size: 70% 70%;
+    border: 6px inset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+}
+
+.restart.smile {
+    background-image: url(./images/smile.png);
+}
+
+.restart.pop {
+    background-image: url(./images/pop.png);
+}
+
+.restart.gameover {
+    background-image: url(./images/gameover.png);
+}
+
+.restart.gamewin {
+    background-image: url(./images/gamewin.png);
+}
+
+.number {
+    position: relative;
+    padding-top: 2px;
+    padding-left: 4px;
+    font-family: StatsFont;
+    font-size: 60px;
+    line-height: 52px;
+    width: 109px;
+    height: 52px;
+    background: black;
+    color: red;
+}
+
+.number::before {
+    padding-top: 2px;
+    padding-left: 4px;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 0, 0, 0.5);
+    content: '8888';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 4px inset rgb(210, 210, 210);
+}
+
+.field p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px outset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.field p.active:not(.flag) {
+    border: 4px inset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+}
+
+.field p.opened {
+    border: 3px inset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.field p.flag {
+    border: 4px outset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+    font-size: 0;
+    background-size: 130% 130%;
+
+}
+
+.field p.opened.bomb {
+    border: 3px inset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+    font-size: 0;
+    background-size: 100% 100%;
+}
+
+.field p.tappedMine {
+    border: 3px inset rgb(210, 210, 210);
+    font-size: 0;
+    background-color: red;
+    background-size: 100% 100%;
+}
+
+.field p.wrongFlag {
+    position: relative;
+    border: 3px inset rgb(210, 210, 210);
+    background-color: rgb(160, 160, 160);
+    font-size: 0;
+    background-size: 100% 100%;
+}
+
+.field p.wrongFlag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/cross.png);
+    background-size: 100% 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+@font-face {
+    font-family: FieldFont;
+    src: url(./fonts/ARCADECLASSIC.TTF);
+}
+
+@font-face {
+    font-family: StatsFont;
+    src: url(./fonts/Digital\ Dismay.otf);
+}
+
+.window {
+    min-width: 300px;
+    max-width: 80vw;
+    min-height: 200px;
+    background-image: linear-gradient(to bottom, #6bff9f, #a8bfff);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    animation: window-fade 0.3s ease forwards;
+    font-family: "Arial", sans-serif;
+    color: #fa3939;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+@keyframes window-fade {
+    from {
+        opacity: 0;
+        transform: translate(0, 0) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.skin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
