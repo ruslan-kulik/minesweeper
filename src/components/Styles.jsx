@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Button from './UI/Button/Button';
-import bg1 from '../images/bg1.png';
 import bg2 from '../images/bg2.png';
 import bg3 from '../images/bg3.jpg';
 import bg6 from '../images/bg6.jpg';
@@ -36,10 +35,6 @@ const Styles = ({ applyStyles }) => {
                 <div className='skin'>
                     <div style={{ width: '40px', height: '40px', background: 'gray' }}></div>
                     <input defaultChecked type="radio" value='gray' name='bg' />
-                </div>
-                <div className='skin'>
-                    <img src={bg1} alt="" style={{ height: '40px' }} />
-                    <input type="radio" value='bg2' name='bg' />
                 </div>
                 <div className='skin'>
                     <img src={bg2} alt="" style={{ height: '40px' }} />
